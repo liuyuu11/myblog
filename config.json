@@ -1,0 +1,8 @@
+{
+  "DbPath": "mongodb://www.91snoob.com/myblog",
+  "Redis": {
+    "Active": false,
+    "Host": "www.91snoob.com",
+    "Port": 1111
+  }
+}
