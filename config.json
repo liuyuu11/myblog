@@ -1,5 +1,5 @@
 {
-  "DbPath": "mongodb://www.91snoob.com/myblog",
+  "DbPath": "mongodb://localhost/myblog",
   "Redis": {
     "Active": false,
     "Host": "www.91snoob.com",
