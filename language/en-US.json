@@ -9,7 +9,7 @@
 	},
 	"Category": {
 		"all": "All Category",
-		"uncate": "Uncategorized"
+		"uncate": "Other"
 	},
 	"layoutAdmin": {
 		"title": "Dashboard",
