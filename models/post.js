@@ -1,8 +1,8 @@
-var db = require('./db'),
+const db = require('./db'),
     mongoose = db.mongoose,
     base = db.base;
 
-var postSchema = base.extend({
+const postSchema = base.extend({
     //标题
     Title: {type: String},
     //文章别名

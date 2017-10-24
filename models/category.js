@@ -1,8 +1,8 @@
-var db = require('./db'),
+const db = require('./db'),
     mongoose = db.mongoose,
     base = db.base;
 
-var categorySchema = base.extend({
+const categorySchema = base.extend({
     //分类名称
     CateName: {type: String},
     //分类别名

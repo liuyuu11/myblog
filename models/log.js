@@ -1,7 +1,7 @@
-var db = require('./db'),
+const db = require('./db'),
     mongoose = db.mongoose;
 
-var logSchema = new mongoose.Schema({
+const logSchema = new mongoose.Schema({
     //唯一键
     _id: {type: mongoose.Schema.Types.ObjectId},
     //异常信息

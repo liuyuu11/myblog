@@ -1,10 +1,9 @@
-var i18n = require('i18n');
+const i18n = require('i18n');
 
 // multi language support
 i18n.configure({
   // setup some locales - other locales default to en silently
   locales: ['zh-CN', 'en-US'],
-
   // sets a custom cookie name to parse locale settings from
   cookie: 'locale',
   // query parameter to switch locale (ie. /home?locale=en) - defaults to NULL
@@ -15,7 +14,6 @@ i18n.configure({
   objectNotation: true,
   // sync locale information accros all files - defaults to false
   syncFiles: false,
-
   // where to store json files - defaults to './locales'
   directory: __dirname + '/../language'
 });
