@@ -6,10 +6,10 @@ const logModel = require('../models/log').LogModel;
  * @param callback 回调函数
  */
 exports.getAll = function (params, callback) {
-	var page = parseInt(params.pageIndex) || 1;
-	var size = parseInt(params.pageSize) || 10;
+	let page = parseInt(params.pageIndex) || 1;
+	let size = parseInt(params.pageSize) || 10;
 	page = page > 0 ? page : 1;
-	var options = {};
+	let options = {};
 	options.skip = (page - 1) * size;
 	options.limit = size;
 	switch (params.sortName) {

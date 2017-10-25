@@ -6,14 +6,14 @@ const redisClient = require('../utility/redisClient');
 const i18n = require('../models/i18n')
 
 //列表栏目默认增加全部分类
-var cateAll = {
+let cateAll = {
 	"_id": "",
 	"Alias": "",
 	"CateName": i18n.__("Category.all"),
 	"Img": "/images/All.svg"
 };
 //列表栏目默认增加未分类
-var cateOther = {
+let cateOther = {
 	"_id": "other",
 	"Alias": "other",
 	"CateName": i18n.__("Category.uncate"),
@@ -36,7 +36,7 @@ exports.getAll = function (isAll, cached, callback) {
 		cached = true;
 	}
 	//缓存的key名称
-	var cache_key = isAll ? 'categories_all' : 'categories';
+	let cache_key = isAll ? 'categories_all' : 'categories';
 	if (cached) {
 		//尝试读取缓存
 		redisClient.getItem(cache_key, function (err, categories) {
